@@ -12,8 +12,11 @@
 
 <body>
     <form class="sign-in-form flex-column" action="" method="get">
-        <label class="flex-column"> Full name
-            <input type="text" name="name" required />
+        <label class="flex-column"> First name
+            <input type="text" name="first-name" required />
+        </label>
+        <label class="flex-column"> Last name
+            <input type="text" name="last-name" required />
         </label>
         <label for="email">Email or username</label>
         <input 
@@ -26,7 +29,7 @@
             required />
         <label class="flex-column">Password
             <input type="password" name="pass" required />
-        </label>    
+        </label>
         Gender
         <label>
             <input type="radio" name="gender" value="male" /> Male
@@ -40,6 +43,24 @@
         <label>
             <input type="checkbox" name="adult" required /> Are you adult?
         </label>
+        <label>How old are you?
+            <input type="range" min="0" max="100" required /> 
+            <input type="date">
+        </label>
+        <label class="flex-column">Where are you from?
+            <select name="city">
+                <optgroup label="Zp obl">Zp obl
+                    <option value="Zp">Zp</option>
+                    <option value="Berdyansk">Berdyansk</option>
+                </optgroup>
+                <option value="Dnipro">Dnipro</option>
+                <option value="Dnipro">Kyiv</option>
+            </select>
+        </label>
+        <label class="flex-column">Some info
+        <textarea rows="3"></textarea>
+        </label>
+        <input type="hidden" name="hiddeninput" value="supersecretvalue" />
         <button>Sign Up</button>
     </form>
 </body>
